@@ -2,5 +2,3 @@
 
 Link zu den Modulunterlagen: <https://gitlab.com/alptbz/m123>
 
-testtest
-
