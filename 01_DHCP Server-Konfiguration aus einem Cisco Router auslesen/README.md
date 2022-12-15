@@ -82,12 +82,12 @@ SHow IP DHCP Binding
 
 ## 9. Ubuntu Desktop Guest
 ![Netzwerk mit Ubuntu VM](images/ubuntu-netz.png)
+![IP und Default Route Ubuntu VM](images/ubuntu-ip.png)
 ```
 sudo apt install net-tools
 ifconfig
 ip route
 ```
-![IP und Default Route Ubuntu VM](images/ubuntu-ip.png)
 # Weiterführende Ressourcen 
 - Dokumente auf Teams ueber DHCP
 ## Neue Lerninhalte
