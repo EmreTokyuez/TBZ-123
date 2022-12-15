@@ -88,7 +88,7 @@ sudo apt install net-tools
 ifconfig
 ip route
 ```
-# Weiterführende Ressourcen 
+## Weiterführende Ressourcen 
 - Dokumente auf Teams ueber DHCP
 - [Default Route on Linux](https://www.systranbox.com/the-default-route-in-linux/)
 ## Neue Lerninhalte
