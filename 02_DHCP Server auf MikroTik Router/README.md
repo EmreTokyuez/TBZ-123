@@ -17,7 +17,32 @@ Vollständige Aufgabenstellung findet man [hier](https://gitlab.com/alptbz/m123/
 /ip firewall nat add action=masquerade chain=srcnat out-interface=ether1
 ```
 ## R1 Hostname, IP Einstellungen
+
 ## R1 DHCP-Setup
+```/ip/dhcp-server/ setup
+
+Select interface to run DHCP server on 
+
+dhcp server interface: ether2
+Select network for DHCP addresses 
+
+dhcp address space: 192.168.10.0/24
+Select gateway for given network 
+
+gateway for dhcp network: 192.168.10.1
+If this is remote network, enter address of DHCP relay 
+
+dhcp relay: 8.8.8.8
+Select pool of ip addresses given out by DHCP server 
+
+addresses to give out: 192.168.10.64-192.168.10.254
+Select DNS servers 
+
+dns servers: 192.168.10.1
+Select lease time 
+
+lease time: 1d
+```
 ## Weiterführende Ressourcen 
 - Dokumente auf Teams ueber DHCP
 - [Mikrotik Wiki](https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Server#Quick_Setup_Guide)
