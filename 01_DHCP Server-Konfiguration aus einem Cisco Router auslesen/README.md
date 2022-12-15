@@ -1,6 +1,6 @@
 # Laborübung 1: DHCP Server-Konfiguration aus einem Cisco Router auslesen
 
-Vollständige Aufgabenstellung: 
+Vollständige Aufgabenstellung findet man [hier](https://gitlab.com/alptbz/m123/-/blob/main/05_DHCP/01_DHCP%20Server%20Konfiguration%20Cisco.md)
 
 ## Erledigte Vorbereitungen
  - Thema eingelesen (Dokumente auf Teams)
@@ -90,6 +90,7 @@ ip route
 ```
 # Weiterführende Ressourcen 
 - Dokumente auf Teams ueber DHCP
+- [Default Route on Linux](https://www.systranbox.com/the-default-route-in-linux/)
 ## Neue Lerninhalte
 Das war für mich neu: 
  - Cisco CLI Befehle
