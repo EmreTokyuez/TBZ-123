@@ -29,53 +29,74 @@ Vollständige Aufgabenstellung:
 ## 4. DHCP Konfiguration
 - Welche IP-Adresse wird dem ersten DHCP-Client vergeben, der einen DHCP request macht?
 ```
- Current index 
- 192.168.10.64
+ 192.168.10.64 
 ```
+Denn  192.168.10.1 - 192.168.10.63 sind excluded in der config.
 
 ## 5. DHCP Lease
  Link zur Pcap-Datei: 
 
 - Welche IP Adresse wir dem Client zugeteilt?
-  192.168.10.65
+  - 192.168.10.65
 - Nach welcher Zeit müssen die Clients den DHCP lease erneuern?
-  86400s -> 1 day
+  - 86400s -> 1 day
 - Welche Option Nummer hat die Option "Router"?
-  Option (3)
+  - Option (3)
 - Welche Option Nummer hat die Option "Domain Name Server"
-  Option (6)
+    - Option (6)
 ## 6. VPCS
 
 ```
 show ip
 ```
+Zeigt Details zur Netzwerkkonfiguration vom Host an wie z.B die IP, die Subnetzmaske sowie die MAC-Adresse. Der DNS Server sowie Informationen vom DHCP-Lease werden angezeigt.
 
 ```
 dhcp
 ```
-
+IP-Adresse sowie Subnetzmaske vom Host sowie die IP-Adresse des DHCP-Servers werden angezeigt.
+Sowie 'DORA' -> Discover, Offer, Request, Acknowledge
 ```
 ping 192.168.10.1
 ```
-
+Ein spezifischer Host im lokalen Netzwerk wird angepingt. Diese IP gehoert dem Router. Man kann kontrollieren ob man auf dem lokalen Netzwerk kommunizieren kann.
 ```
 ping google.ch
 ```
-
+Eine externe Website wird gepingt. Der Host/Router pingt den DNS-Server oder schaut auf der Hostfile nach, welche IP 'google.ch' hat. Kann moeglicherweise nicht klappen, falls der DNS-Server falsch eingestellt wurde bzw. die Hostfile falsch ausgefuellt wurde.
 
 ```
 ping 8.8.8.8
 ```
+Ein DNS-Server wird angepingt. Das sollte eigentlich immer klappen, solange der DNS-Server online ist (praktisch immer) und der Host eine funktionierende Internetverbindung hat.
 ## 7. PCs konfigurieren
+```
+set pcname PCX
+dhcp
+```
 ## 8. Cisco CLI Befehl herausfinden - DHCP bindings
+``` 
+SHow IP DHCP Binding
+```
+![DHCP Bindings](images/dhcp-bindings.png)
+
 ## 9. Ubuntu Desktop Guest
+![Netzwerk mit Ubuntu VM](images/ubuntu-netz.png)
+```
+sudo apt install net-tools
+ifconfig
+ip route
+```
+![IP und Default Route Ubuntu VM](images/ubuntu-ip.png)
 # Weiterführende Ressourcen 
 - Dokumente auf Teams ueber DHCP
 ## Neue Lerninhalte
 Das war für mich neu: 
  - Cisco CLI Befehle
+ - Linux CLI Befehle
+ - DHCP genauer angeschaut
+ - Pakete ueber Wireshark analysiert
 
 ## Reflexion
-Mithilfe der Übung habe ich nun das Gefühl eine grobe Übersicht über GNS3 zu haben. Der [Kompetenz](../01_Kompetenzmatrix/README.md) *D1G: Ich kann einfache statische Routingtabellen umsetzen.* bin ich nun definitiv einen Schritt näher gekommen. 
-Ich fand die Übung sehr einfach und hatte keine grosse Mühe. 
+Mithilfe dieses Labors habe ich mein Vorwissen ueber DHCP vertieft und hab auch live zugeschaut, wie solche DHCP-Pakete aussehen. Ich habe auch die Basics der  Cisco CLI Befehle kennengelernt. Die Linux CLI ist sehr aehnlich zur MacOS CLI (beides Unix). Pakete ueber DHCP zu analysieren war sehr interessant.
 
