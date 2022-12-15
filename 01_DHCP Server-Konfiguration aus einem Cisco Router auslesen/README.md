@@ -27,6 +27,13 @@ Vollständige Aufgabenstellung findet man [hier](https://gitlab.com/alptbz/m123/
   ```
 
 ## 4. DHCP Konfiguration
+```
+network: 192.168.10.0 255.255.255.0
+ip address pool: subnet10
+default gateway: 192.168.10.1 
+dns nameserver: 8.8.8.8, 8.8.4.4
+interface: GigabitEthernet0/1
+```
 - Welche IP-Adresse wird dem ersten DHCP-Client vergeben, der einen DHCP request macht?
 ```
  192.168.10.64 
