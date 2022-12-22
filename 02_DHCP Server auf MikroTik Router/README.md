@@ -1,4 +1,4 @@
-# Laborübung 1: DHCP Server-Konfiguration aus einem Cisco Router auslesen
+# Laborübung 2: DHCP Server auf MikroTik Router
 
 Vollständige Aufgabenstellung findet man [hier](https://gitlab.com/alptbz/m123/-/blob/main/05_DHCP/02_DHCP%20Server%20auf%20MikroTik%20Router.md)
 
@@ -55,6 +55,8 @@ Vorhandene DHCP Leases:
 - Dokumente auf Teams ueber DHCP
 - [Mikrotik Wiki](https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Server#Quick_Setup_Guide)
 ## Neue Lerninhalte
+- Mikrotik CLI
 
 ## Reflexion
-
+- Ging sehr flott, war sehr aehnlich zum Labor mit Cisco
+- DHCP-Setup war einfacher als bei Cisco 
