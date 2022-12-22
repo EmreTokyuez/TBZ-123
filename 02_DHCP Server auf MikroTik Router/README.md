@@ -43,7 +43,12 @@ Select lease time
 lease time: 1d
 ```
 ## R1 DHCP-Config
+DHCP Config:
+<br/>
 ![Config](images/netzwerk/../config.png)
+<br/>
+Vorhandene DHCP Leases:
+<br/>
 ![DHCP Leases](images/netzwerk/../leases.png)
 
 ## Weiterführende Ressourcen 
