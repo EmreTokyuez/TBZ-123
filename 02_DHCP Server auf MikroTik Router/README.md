@@ -16,7 +16,6 @@ Vollständige Aufgabenstellung findet man [hier](https://gitlab.com/alptbz/m123/
 /ip dns set allow-remote-requests=yes
 /ip firewall nat add action=masquerade chain=srcnat out-interface=ether1
 ```
-## R1 Hostname, IP Einstellungen
 
 ## R1 DHCP-Setup
 ```/ip/dhcp-server/ setup
@@ -43,6 +42,10 @@ Select lease time
 
 lease time: 1d
 ```
+## R1 DHCP-Config
+![Config](images/netzwerk/../config.png)
+![DHCP Leases](images/netzwerk/../leases.png)
+
 ## Weiterführende Ressourcen 
 - Dokumente auf Teams ueber DHCP
 - [Mikrotik Wiki](https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Server#Quick_Setup_Guide)
