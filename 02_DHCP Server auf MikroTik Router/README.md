@@ -51,6 +51,37 @@ Vorhandene DHCP Leases:
 <br/>
 ![DHCP Leases](images/netzwerk/../leases.png)
 
+
+## Komplette config
+```
+# jan/19/2023 07:28:47 by RouterOS 7.5
+# software id = 
+#
+/disk
+set sata1 disabled=no
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/ip pool
+add name=dhcp_pool0 ranges=192.168.10.64-192.168.10.254
+/port
+set 0 name=serial0
+/ip address
+add address=192.168.10.1/24 interface=*2 network=192.168.10.0
+/ip dhcp-client
+add interface=*1
+/ip dhcp-server
+add address-pool=dhcp_pool0 interface=*2 lease-time=1d name=dhcp1
+/ip dhcp-server network
+add address=192.168.10.0/24 dns-server=192.168.10.1 gateway=192.168.10.1
+/ip dns
+set allow-remote-requests=yes
+/ip firewall nat
+# no interface
+add action=masquerade chain=srcnat out-interface=*1
+/system identity
+set name=R1
+```
+
 ## Weiterführende Ressourcen 
 - Dokumente auf Teams ueber DHCP
 - [Mikrotik Wiki](https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Server#Quick_Setup_Guide)

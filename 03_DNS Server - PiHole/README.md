@@ -58,8 +58,19 @@ Services die laufen, weil dies klappt:
         dns-nameservers 192.168.11.1
   ```
 ### Pi-hole installieren
-
+```
+curl -sSL https://install.pi-hole.net | bash
+```
+```
+    http://192.168.11.10/admin
+    admin-pw: O0rC-2-M 
+```
+****
 ### Korrekter DNS Server im DHCP Server eintragen
+R1 Konsole:
+```
+/ip/dhcp-server/network/set 0 dns-server=192.168.11.10
+```
 
 ### Fragen
 - Wie teilt der Client dem Server mit, dass er DNSSEC verwenden möchte?

@@ -8,7 +8,7 @@
 ---
 - tap0 192.168.23.135
 - - Eigener PC ist via OpenVPN (Layer2) mit tap0 verbunden.  
-Picture
+![Setup GNS3](Screenshot%202022-12-08%20at%2011.07.37.png)
 
 ## Config R1
 ```
@@ -29,7 +29,7 @@ ip 192.168.24.2 255.255.255.0 192.168.24.1
 ## Config pc 
 ---
 ```
-sudo netstat -n 192.16wdwdaw
+sudo netstat -n 192.168.24.2
 
 ```
 ## Quellen
