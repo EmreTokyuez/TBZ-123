@@ -26,8 +26,9 @@ Vollständige Aufgabenstellung findet man [hier](https://gitlab.com/alptbz/m123/
   - Neue Config File ist im Ordner "config" zu finden.
 
 ## 4. Konfiguration auf den Router uploaden
+
 - Mit welcher Abfolge von Befehlen kann eindeutig festgestellt werden, dass die Subnetzanpassung erfolgreich war und alle Services (DHCP, DNS, usw.) eindeutig funktionieren?
-   - s
+   - 
 ## 5. TFTP Protokoll beobachten
 
 ## Weiterführende Ressourcen 
