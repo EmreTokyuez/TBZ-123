@@ -27,8 +27,21 @@ Vollständige Aufgabenstellung findet man [hier](https://gitlab.com/alptbz/m123/
 
 ## 4. Konfiguration auf den Router uploaden
 
+```
+copy tftp: r1-confg
+```
+Daraufhin ein reload.
+
 - Mit welcher Abfolge von Befehlen kann eindeutig festgestellt werden, dass die Subnetzanpassung erfolgreich war und alle Services (DHCP, DNS, usw.) eindeutig funktionieren?
-   - 
+  - Router:
+    ```
+    show running-config
+
+    ```
+  - PC1:
+    ```
+    ```
+
 ## 5. TFTP Protokoll beobachten
 
 ## Weiterführende Ressourcen 
