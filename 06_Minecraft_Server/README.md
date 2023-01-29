@@ -22,11 +22,11 @@ Im GUI vom Sunrise Router erstelle ich folgende Portfreigabe:
 ![Sunrise Port Freigabe](images/sunrise.png). 
 Zugriff via externer IP und Port-Number funktioniert.
 ## Minecraft Server zur Domain verknuepfen
-- Als erstes braucht es einen CNAME-Record fuer den Minecraft Server. Ich nenne es ganz passend "minecraft".
+- Als erstes braucht es einen CNAME-Record fuer den Minecraft Server. Ich nenne es ganz passend "modul123".
 - Als zweites braucht es einen SRV-Record, welcher den Service angibt, die Ports angibt und die Ziel-Domain.
 - Das sieht wie folgt aus:
 - ![Cloudflare setup](images/cloudflare.png)
-- Externer Zugang via "minecraft.emreserver.com" geht. (Bitte schreiben wenn sie mit dem bewerten fertig sind, damit ich den Server offline nehmen kann :)).
+- Externer Zugang via "modul123.emreserver.com" geht. (Bitte schreiben wenn sie mit dem bewerten fertig sind, damit ich den Server offline nehmen kann :)).
 
 ## Weiterführende Ressourcen 
 - Tutorial vom ganzen: https://www.youtube.com/watch?v=uVV-L1GBvQo&t=832s
