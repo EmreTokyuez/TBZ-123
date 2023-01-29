@@ -54,8 +54,6 @@ Die Selektion der Hardware ist zum Teil viel, jedoch gibt es dem Unternehmen meh
 Berechtigungen fuer die Shares wurden wie in der Aufgabenstellung uebernommen:
 ![Berechtigungen](images/Berechtigungsmatrix.png)
 
-
-
 ### Ubuntu Desktop fuer den Entwickler
 Der Ubuntu Desktop wurde im GNS3 hinzugefuegt und mit dem Switch verbunden. Das Standard Login zum Desktop wurde verwendet (osboxes.org) und das Netzwerk war in der Files App direkt sichtbar.
 Ein Desktop-Shortcut wurde dank dieser [Quelle](https://askubuntu.com/questions/1232612/how-to-make-a-desktop-shortcut-on-ubuntu-20-04) erstellt. 
@@ -76,6 +74,8 @@ https://www.truenas.com/docs/core/coretutorials/storage/pools/datasets/
 https://www.truenas.com/docs/core/gettingstarted/storingdata/
 https://www.truenas.com/docs/core/coretutorials/sharing/smb/smbshare/#create-local-user-accounts
 ## Neue Lerninhalte
+- TrueNAS ausprobiert
 
 
 ## Reflexion
+Cooles Labor, da ich TrueNAS schon lange mal ausprobieren wollte. Die ZFS Pools waren einfach einzurichten, jedoch sind sie auch suboptimal. Cooles Labor aufjedenfall und auch nicht schwierig. 
