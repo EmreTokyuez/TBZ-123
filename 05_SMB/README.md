@@ -33,10 +33,10 @@ Die Selektion der Hardware ist zum Teil viel, jedoch gibt es dem Unternehmen meh
 - Installation ausgefuert wie in der Anleitung [hier](https://www.truenas.com/blog/how-to-install-truenas-core/
 )
 - Passwort zu "root" gesetzt sowie "Boot via BIOS" benutzt, da das UEFI nicht funktioniert hat (ist die VM veraltet? War stuck beim booten).
-- Per
+  
 
 ## TrueNAS Konfiguration
-- Eingeloggt via VNC-Verbindung zu einem Ubuntu-Desktop
+- Eingeloggt via VNC-Verbindung zu einem Ubuntu-Desktop und dort mit dem WebInterface von TrueNAS
 ### Pool und Dataset
 
 ## Benutzer Setup
@@ -50,7 +50,6 @@ Die Selektion der Hardware ist zum Teil viel, jedoch gibt es dem Unternehmen meh
   - Username: Entwickler
   - PW: Entwickler
 
-
 ### SMB Shares
 Berechtigungen fuer die Shares wurden wie in der Aufgabenstellung uebernommen:
 ![Berechtigungen](images/Berechtigungsmatrix.png)
@@ -58,7 +57,18 @@ Berechtigungen fuer die Shares wurden wie in der Aufgabenstellung uebernommen:
 
 
 ### Ubuntu Desktop fuer den Entwickler
+Der Ubuntu Desktop wurde im GNS3 hinzugefuegt und mit dem Switch verbunden. Das Standard Login zum Desktop wurde verwendet (osboxes.org) und das Netzwerk war in der Files App direkt sichtbar.
+Ein Desktop-Shortcut wurde dank dieser [Quelle](https://askubuntu.com/questions/1232612/how-to-make-a-desktop-shortcut-on-ubuntu-20-04) erstellt. 
+![Ubuntu Desktop](images/ubuntu%20desktop%20shortcut.png)
+```
+ln -s $PWD/smb-share\:server\=truenas.local\,share\entwicklung/ ~/Desktop/
+```
 ### Windows VM fuer die Buchhaltung
+Eine Windows VM wurde in das GNS3 Netzwerk hinzugefuegt und mit der Switch verbunden. Das endgueltige Netzwerk sah wie folgt aus:
+![GNS3 Netzwerk final](images/gns3%20final.png)
+Das Einloggen war genauso einfach wie im Ubuntu Desktop und ein Shortcut auf dem Desktop zu erstellen war ein einfaches Drag & Drop.
+![Windows](images/windows.png)
+
 
 ## Weiterführende Ressourcen 
 https://www.truenas.com/blog/how-to-install-truenas-core/
