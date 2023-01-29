@@ -55,6 +55,8 @@ Die Selektion der Hardware ist zum Teil viel, jedoch gibt es dem Unternehmen meh
 Berechtigungen fuer die Shares wurden wie in der Aufgabenstellung uebernommen:
 ![Berechtigungen](images/Berechtigungsmatrix.png)
 
+
+
 ### Ubuntu Desktop fuer den Entwickler
 ### Windows VM fuer die Buchhaltung
 
