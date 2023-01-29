@@ -25,7 +25,7 @@ Zugriff via externer IP und Port-Number funktioniert.
 - Als erstes braucht es einen CNAME-Record fuer den Minecraft Server. Ich nenne es ganz passend "modul123".
 - Als zweites braucht es einen SRV-Record, welcher den Service angibt, die Ports angibt und die Ziel-Domain.
 - Das sieht wie folgt aus:
-- ![Cloudflare setup](images/cloudflare.png)
+- ![Cloudflare setup](images/cloudflarsetup.png)
 - Externer Zugang via "modul123.emreserver.com" geht. (Bitte schreiben wenn sie mit dem bewerten fertig sind, damit ich den Server offline nehmen kann :)).
 
 ## Weiterführende Ressourcen 
